@@ -42,11 +42,11 @@ public class SortedCollection {
 	 * 
 	 * @return the smallest number in the collection
 	 */
-	public int remove(String r) throws NoSuchElementException {
+	public int remove() throws NoSuchElementException {
 		// TODO: Implement
 		if(list.size() == 0)
 		{
-			throw new NoSuchElementException("No Such Element to be removed"+r);
+			throw new NoSuchElementException("No Such Element to be removed");
 		}
 		else
 		{
@@ -71,6 +71,7 @@ public class SortedCollection {
 	 */
 	public static void main(String[] args) {
 		String r = args[0];
+		System.out.println(r);
 		SortedCollection collection = new SortedCollection();
 		if (args.length == 0) {
 			showUsage();
@@ -102,7 +103,7 @@ public class SortedCollection {
 			System.out.print("sorted: ");
 		}
 		for (int i = 0; i < args.length; i++) {
-			int num = collection.remove(r);
+			int num = collection.remove();
 			System.out.print(num + " ");
 		}
 		System.out.println();
