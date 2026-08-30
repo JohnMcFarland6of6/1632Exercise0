@@ -97,7 +97,7 @@ public class SortedCollection {
 			collection.add(temp);
 		}
 
-		if(args.length > 0)
+		if(args.length > -1)
 		{
 			System.out.print("sorted: ");
 		}
