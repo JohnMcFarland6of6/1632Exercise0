@@ -70,8 +70,6 @@ public class SortedCollection {
 	 * @param args commandline arguments; see showUsage() for detailed information
 	 */
 	public static void main(String[] args) {
-		String r = args[0];
-		System.out.println(r);
 		SortedCollection collection = new SortedCollection();
 		if (args.length == 0) {
 			showUsage();
