@@ -53,20 +53,9 @@ public class SortedCollection {
 		}
 		else
 		{
-			ListIterator<Integer> current = list.listIterator();	
-			int smallest = current.next();
-			//System.out.println("==============Remove=============");
-			while(current.hasNext())
-			{
-				int currentValue = current.next();
-				//System.out.println("currentv: " +currentValue);
-				if(currentValue <= smallest)
-				{
-					//System.out.println(smallest + " is larger than "+currentValue);
-					smallest = currentValue;
-				}
-			}
-			return smallest;	
+			//ListIterator<Integer> current = list.listIterator();	
+			
+			return list.getFirst();	
 		}
 	}
 
