@@ -73,7 +73,7 @@ public class SortedCollection {
 		SortedCollection collection = new SortedCollection();
 		if (args.length == 0) {
 			showUsage();
-			//return;
+			return;
 		}
 		
 		// TODO: add numbers in commandline arguments to collection using the add(int) method.
@@ -97,10 +97,8 @@ public class SortedCollection {
 			collection.add(temp);
 		}
 
-		if(args.length > -1)
-		{
-			System.out.print("sorted: ");
-		}
+		
+		System.out.print("sorted: ");
 		for (int i = 0; i < args.length; i++) {
 			int num = collection.remove();
 			System.out.print(num + " ");
