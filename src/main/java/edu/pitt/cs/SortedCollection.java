@@ -84,15 +84,15 @@ public class SortedCollection {
 		for(int i = 0; i< args.length; i++)
 		{
 			int ascii = args[i].charAt(0);
-			if((ascii <= 48 && ascii >= 58) || ascii == 45) //checks ascii value is a number or is the negative sign
-			{
-				temp = Integer.parseInt(args[i]);
+			//if((ascii <= 48 && ascii >= 58) || ascii == 45) //checks ascii value is a number or is the negative sign
+			//{
+			temp = Integer.parseInt(args[i]);
 				
-			}
-			else
-			{
-				break;
-			}
+			//}
+			//else
+			//{
+			//	break;
+			//}
 			collection.add(temp);
 		}
 
