@@ -91,7 +91,8 @@ public class SortedCollection {
 			}
 			else
 			{
-				break;
+				showUsage();
+				return;
 			}
 			collection.add(temp);
 		}
