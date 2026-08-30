@@ -96,8 +96,10 @@ public class SortedCollection {
 			collection.add(temp);
 		}
 
-
-		System.out.print("sorted: ");
+		if(args.length > 0)
+		{
+			System.out.print("sorted: ");
+		}
 		for (int i = 0; i < args.length; i++) {
 			int num = collection.remove();
 			System.out.print(num + " ");
