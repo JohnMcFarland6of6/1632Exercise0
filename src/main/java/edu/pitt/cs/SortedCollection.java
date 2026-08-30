@@ -55,7 +55,7 @@ public class SortedCollection {
 		{
 			//ListIterator<Integer> current = list.listIterator();	
 			
-			return list.getFirst();	
+			return list.removeFirst();	
 		}
 	}
 
