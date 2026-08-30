@@ -22,15 +22,12 @@ public class SortedCollection {
 		// TODO: Implement
 		ListIterator<Integer> current = list.listIterator();	
 		int i = 0;
-		//System.out.println("============C=============");
 		while(current.hasNext())
 		{
 			
 			int currentValue = current.next();
-			System.out.println("currentValue: " + currentValue);
 			if(currentValue >= n)
 			{
-				System.out.println(n + " is smaller than " + currentValue);
 				break;
 			}
 			i++;
