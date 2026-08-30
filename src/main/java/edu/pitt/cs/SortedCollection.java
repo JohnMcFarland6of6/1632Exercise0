@@ -22,7 +22,7 @@ public class SortedCollection {
 		// TODO: Implement
 		ListIterator<Integer> current = list.listIterator();	
 		int i = 0;
-		System.out.println("============C=============");
+		//System.out.println("============C=============");
 		while(current.hasNext())
 		{
 			
@@ -94,13 +94,13 @@ public class SortedCollection {
 		// If any commandline argument is not a number, call showUsage() and return.
 		
 		int temp;
-		String[] numsStr = args[0].split(" ");
-		for(int i = 0; i< numsStr.length; i++)
+		//String[] numsStr = args[0].split(" ");
+		for(int i = 0; i< args.length; i++)
 		{
-			int ascii = numsStr[i].charAt(0);
+			int ascii = args[i].charAt(0);
 			if((ascii <= 48 && ascii >= 58) || ascii == 45) //checks ascii value is a number or is the negative sign
 			{
-				temp = Integer.parseInt(numsStr[i]);
+				temp = Integer.parseInt(args[i]);
 				
 			}
 			else
